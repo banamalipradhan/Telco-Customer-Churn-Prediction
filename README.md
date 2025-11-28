@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="visuals/cover_page.png" width="800" alt="Customer Churn Prediction Cover Page">
+  <img src="cover_page/customer_churn.png" width="800" alt="Customer Churn Prediction Cover Page">
 </p>
 
 # Customer Churn Prediction using Machine Learning
