@@ -99,3 +99,8 @@ These insights can help business teams design targeted retention strategies.
 - Scikit-Learn
 - Jupyter Notebook
 - Pickle
+
+## Author
+**Banamali Pradhan** — Aspiring Data Analyst  
+Transitioning from Pharmaceutical Industry to Data Analytics  
+[LinkedIn Profile](https://www.linkedin.com/in/banamali-pradhan)
