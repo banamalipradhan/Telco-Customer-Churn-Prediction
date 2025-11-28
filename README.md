@@ -1,96 +1,101 @@
 <p align="center">
-  <img src="cover_page/customer_churn.png" alt="Churn Project Cover" width="800">
+  <img src="visuals/cover_page.png" width="800" alt="Customer Churn Prediction Cover Page">
 </p>
 
-# 📌 Customer Churn Prediction using Machine Learning
+# Customer Churn Prediction using Machine Learning
 
-This project focuses on predicting whether a customer will leave (churn) based on historical telecom customer data. By identifying churn-prone customers early, companies can implement targeted retention strategies and reduce revenue loss.
-
----
-
-## 🔍 Problem Statement
-
-Customer churn is a major challenge for subscription-based businesses. Losing customers not only impacts revenue but also increases the cost of acquiring new customers.  
-The goal is to **predict churn in advance**, so the company can take action to retain customers who are at higher risk of leaving.
+This project focuses on predicting whether a telecom customer will leave the service (churn) by analyzing their demographic, service usage, and account information. The objective is to help companies identify high-risk customers early and reduce revenue loss through targeted retention strategies.
 
 ---
 
-## 🎯 Objective
+## Problem Statement
 
-Build a machine-learning model that:
-
-✔ Classifies customers into **Churn vs No Churn**  
-✔ Identifies key factors that drive churn  
-✔ Supports business teams in proactive decision-making
+Customer churn is a critical challenge in telecom businesses. Losing customers leads to a decline in revenue and higher acquisition costs.  
+The main goal of this project is to predict churn in advance so the business can proactively retain customers who are likely to discontinue their services.
 
 ---
 
-## 📊 Dataset Overview
+## Objectives
 
-A structured dataset with **7,043 telecom customers** containing:
-
-- **Customer profile** (gender, senior citizen, dependents)
-- **Service usage** (phone, internet, streaming services)
-- **Account details** (contract type, payment method, tenure)
-- **Billing information** (monthly & total charges)
-- **Churn flag** → Target variable (Yes/No)
-
-The dataset reflects real business-like telecom environments.
+- Build a machine-learning model to classify customers as Churn or Not Churn
+- Identify key churn-driving factors for business decision-making
+- Provide actionable recommendations to reduce churn
+- Save the best model for deployment use
 
 ---
 
-## 🧠 Workflow & Approach
+## Dataset Overview
 
-The project follows a complete **end-to-end ML pipeline**:
+The dataset contains 7,043 customer records with the following categories:
 
-1️⃣ Data Loading & Cleaning  
-2️⃣ Missing value handling (`TotalCharges` conversion)  
-3️⃣ Exploratory Data Analysis (EDA) for insight discovery  
-4️⃣ Feature Encoding for categorical attributes  
-5️⃣ Train-Test Split  
-6️⃣ Model Training (multiple models tested)  
-7️⃣ Performance Evaluation  
-8️⃣ Model Saving using Pickle for future predictions  
+- Customer Profile: gender, senior citizen, dependents
+- Services: phone, internet, streaming services, support services
+- Account Details: contract type, payment method, tenure
+- Billing Information: monthly and total charges
+- Target Variable: churn status (Yes/No)
 
-This makes the solution **usable and deployment-ready**.
+The dataset closely represents a real telecom business environment.
 
 ---
 
-## 📈 Model Results
+## Data Science Workflow
 
-Multiple classification models were tested.  
-The **Random Forest Classifier** performed the best with:
+### 1. Data Loading & Initial Checks
+- Loaded dataset and reviewed structure
+- Identified missing and incorrect data types
 
-| Metric | Result |
-|--------|--------|
-| Accuracy | **80–85%** |
-| Recall (Churn class) | Good (model captures most churn cases) |
+### 2. Data Cleaning
+- Converted improper data types (e.g., TotalCharges to numeric)
+- Handled missing values and formatting errors
 
-✔ Effective for churn detection rather than guessing imbalance  
-✔ Good balance between interpretability & performance
+### 3. Exploratory Data Analysis
+- Investigated patterns related to churn
+- Analyzed customer retention behavior
+
+### 4. Feature Engineering
+- Encoded categorical variables into machine-readable form
+- Created the final feature matrix and target variable
+
+### 5. Train-Test Split
+- Divided data into training and testing sets
+
+### 6. Model Building
+Models tested:
+- Logistic Regression (baseline)
+- Random Forest Classifier (best performing)
+- Other classification methods considered
+
+### 7. Evaluation
+The final model demonstrated:
+
+- Accuracy: approximately 80–85 percent
+- Good recall for churn class
+- Effective identification of high-risk customers
+
+### 8. Deployment Preparation
+- Model saved using Pickle format for future prediction use
 
 ---
 
-## 💡 Key Business Insights
+## Key Business Insights
 
-✔ **Month-to-month customers** churn the most → Promote long-term plans  
-✔ **Higher monthly charges** increase churn → Offer pricing adjustments  
-✔ Customers **without Tech Support / Online Security** churn more → Upsell support services  
-✔ **Long-tenure** customers are more loyal → Reward loyalty  
-✔ Certain **payment methods** show higher churn → Improve payment experience
+| Insight | Recommendation |
+|--------|----------------|
+| Customers with month-to-month contracts churn more | Promote long-term plans and loyalty programs |
+| Higher monthly charges increase churn | Offer pricing adjustments or bundled packages |
+| Lack of technical support or security services raises churn | Upsell value-added services |
+| Lower tenure customers show higher churn | Improve onboarding and engagement |
+| Electronic check payment users churn more | Encourage secure digital payment options |
 
-🔹 These insights help business teams reduce churn through **targeted retention campaigns**.
+These insights can help business teams design targeted retention strategies.
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
-- Python  
-- Pandas, NumPy  
-- Seaborn, Matplotlib  
-- Scikit-Learn  
-- Jupyter Notebook  
-- Pickle for model storage  
-
-
-
+- Python
+- Pandas, NumPy
+- Seaborn, Matplotlib
+- Scikit-Learn
+- Jupyter Notebook
+- Pickle
